@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>sino</title>
+            <link rel="stylesheet" href="styleshit.css">
+           
+        
+        </head>
+        <body><div class="background"></div>
+            <div class="main">
+                <nav>
+                    
+                <a href="logo.png" class="logo">mama<span>mo</span></a>
+                
+                </a>
+                <ul class="main-menu">
+                <li><a href="umay.html" class="active">Home</a></li>
+                
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contacts.html">Contacts</a></li> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="umay.html" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="Banat.html">Banat</a>
+                      <a class="dropdown-item" href="Cats.html">Cats</a>
+                      <a class="dropdown-item" href="Food.html">Food</a>
+                </ul>
+                </nav>
+                <div class="comment-box">
+                <h2>Comment Section</h2>
+                <form id="myForm">
+                    Full name: <input id="userName" type="text" name="fname"><br><br>
+                    Email: <input id="userEmail" type="text" name="email"><br><br>
+                    <textarea id="userComment" rows="4" cols="50" name="comment">Enter comment here...</textarea><br><br>
+                    <input type="button" onclick="submitComment()" value="Submit">
+                </form>
+                <h5>Submitted data:</h5>
+                <p id="data"></p>
+                </div>
+            
+                <script>
+                    function submitComment() {
+                        let data = "";
+                        let name = document.getElementById("userName").value;
+                        let email = document.getElementById("userEmail").value;
+                        let comment = document.getElementById("userComment").value;
+            
+                        data = `User name: ${name}<br/>User email: ${email}<br/>User comment: ${comment}`;
+                        document.getElementById("data").innerHTML = data;
+                    }
+                </script>
+           
+
+<div class="container">
+    <div class="image">
+      <img src="sino.jpg">
+    </div>
+    <div class="text">
+      <h2>Pangalan kaba? kasi pag nawala ka sino ako?</h2>
+      <a href="sino.jpg" download="sino">Download </a>
+    </div>
+  </div>
+  
+</body>
+</html>
